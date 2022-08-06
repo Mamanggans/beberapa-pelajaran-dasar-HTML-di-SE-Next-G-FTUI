@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body{
+		background-color: pink;
+	}
+</style>
+<script>
+	function validate()
+	{
+		if(document.f1.check1.checked==false)
+		{
+			alert("please select the check box");
+			return false
+		}
+		else
+			return true
+	}
+</script>
+</head>
+<body>
+<form name="f1" method="get" action="thanks.html" onsubmit="return validate();">
+	<input type="checkbox" id="check1">do you want to asep
+	<input type="submit" name="submit" value="submit"></input>
+	<input type="reset" name="reset" value="reset"></input>
+</form>
+</body>
+</html>
