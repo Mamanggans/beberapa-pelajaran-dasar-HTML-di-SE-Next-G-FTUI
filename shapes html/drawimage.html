@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body onload = setImage()>
+	<canvas id="myCanvas" width="250" height="300" 
+ 		style="border: 1px solid #d3d3d3;">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</canvas>
+	<script>
+		function setImage(){
+			var c=document.getElementById("myCanvas");
+			var ctx= c.getContext("2d");
+			var img= new Image();
+		img.src="d.jpg";
+		img.onload = function(){
+		ctx.drawImage(img,10,10,150,150);
+			}
+		}
+	</script>
+</body>
+</html>
